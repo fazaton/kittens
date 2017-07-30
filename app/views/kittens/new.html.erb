@@ -1,0 +1,9 @@
+<h1> Give your cat name, age, cuteness and softness </h1>
+
+<%= simple_form_for @kitten do |f| %>
+	<%= f.input :name %>
+	<%= f.input :age %>
+	<%= f.input :cuteness %>
+	<%= f.input :softness %>
+	<%= f.submit 'Create' %>
+<% end %>

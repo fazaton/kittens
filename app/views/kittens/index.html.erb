@@ -2,10 +2,11 @@
 
 <% @kittens.each do |kitten| %>
 	<div>
-		<p>Name: <%= kitten.name %></p>
+		<p><%= link_to kitten.name, kitten_path(kitten) %></p>
 		<p>Age: <%= kitten.age %></p>
 		<p>Cuteness: <%= kitten.cuteness %></p>
 		<p>Softness: <%= kitten.softness %></p>
+		<br>
 	</div>
 <% end %>
 
